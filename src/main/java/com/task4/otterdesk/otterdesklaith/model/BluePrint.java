@@ -1,4 +1,4 @@
-package com.task4.otterdesk.otterdesklaith;
+package com.task4.otterdesk.otterdesklaith.model;
 
 public class BluePrint {
 
@@ -9,7 +9,7 @@ public class BluePrint {
 
  public BluePrint(){};
 
- 
+
     public BluePrint(String id, String currentProcessingPhase, String fileLocation, Long createTime) {
         this.id = id;
         this.currentProcessingPhase = currentProcessingPhase;
