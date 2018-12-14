@@ -1,5 +1,6 @@
 package com.task4.otterdesk.otterdesklaith;
 
+import com.task4.otterdesk.otterdesklaith.Service.MessageSender;
 import com.task4.otterdesk.otterdesklaith.model.BluePrint;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.amqp.core.Queue;

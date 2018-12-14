@@ -1,4 +1,4 @@
-package com.task4.otterdesk.otterdesklaith;
+package com.task4.otterdesk.otterdesklaith.Service;
 
 import com.task4.otterdesk.otterdesklaith.model.BluePrint;
 import org.slf4j.Logger;
