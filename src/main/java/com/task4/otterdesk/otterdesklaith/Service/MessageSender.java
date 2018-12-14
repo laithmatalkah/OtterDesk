@@ -15,7 +15,7 @@ public class MessageSender {
         private static final Logger logger = LoggerFactory.getLogger(MessageSender.class.getName());
 
         @Autowired
-        private BluePrint bluePrint;
+        private BluePrint bluePrint=new BluePrint("ghajksdafsdfj","hjsdkfsdhfgsf","ghsjdfsf74erghwe",678234345L);
 
         @Autowired
         private AmqpTemplate rabbitTemplate;
@@ -23,7 +23,9 @@ public class MessageSender {
         @Autowired
         private Queue queue;
 
-        @Scheduled(fixedRate = 3000)
+
+
+    @Scheduled(fixedRate = 5000)
         public void send() {
             this.rabbitTemplate.convertAndSend(queue.getName(), bluePrint);
             logger.info(" [x] Sent '" + bluePrint + "'");
